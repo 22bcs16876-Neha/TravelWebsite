@@ -25,7 +25,7 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 6rem;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 section {
@@ -470,10 +470,12 @@ header .search-bar-container label:hover {
     background: rgba(0, 0, 0, .7);
     padding: 2rem;
     padding-top: 5rem;
+    transition: 1.5s all;
 }
 
 .gallery .box-container .box:hover .content {
     top: 0;
+    transition:1s all;
 }
 
 .gallery .box-container .box .content h3 {
@@ -598,6 +600,7 @@ header .search-bar-container label:hover {
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
+    text-transform:none;
 }
 
 .footer .box-container .box a {
@@ -625,23 +628,6 @@ header .search-bar-container label:hover {
 .footer .credit span {
     color: var(--orange);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
