@@ -1,600 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour and Travel Website </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel.lk - India Tours & Travel</title>
 
-  <!-- swiper cdn link -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- font awesome cdn link  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-  <!-- custom css file link  -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
-  <!-- header section starts -->
 
-
-  <header>
-
-    <div id="menu-bar" class="fas fa-bars"></div>
-
-    <a href="#" class="logo"><span>T</span>ravel</a>
-
-    <nav class="navbar">
-      <a href="#home">home</a>
-      <a href="#book">book</a>
-      <a href="#packages">packages</a>
-      <a href="#services">services</a>
-      <a href="#gallery">gallery</a>
-      <a href="#review">review</a>
-      <a href="#contact">contact</a>
-    </nav>
-
-    <div class="icons">
-      <i class="fas fa-search" id="search-btn"></i>
-      <i class="fas fa-user" id="login-btn"></i>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Travel.lk</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Book</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <form action="" class="search-bar-container">
-      <input type="search" id="search-bar" placeholder="search here...">
-      <label for="search-bar" class="fas fa-search"></label>
-    </form>
-
+  <!-- Hero Section -->
+  <header class="hero text-center bg-light py-5">
+    <div class="container">
+      <h1>Incredible India Awaits!</h1>
+      <p>Explore the diversity, culture, and beauty of India</p>
+      <a href="#booking" class="btn btn-primary btn-lg mt-3">Book Your Trip</a>
+    </div>
   </header>
 
-  <!-- header section ends    -->
-
-  <!-- login form container -->
-
-  <div class="login-form-container">
-
-    <i class="fas fa-times" id="form-close"></i>
-
-    <form action="">
-      <h3>login</h3>
-      <input type="email" class="box" placeholder="enter your email">
-      <input type="password" class="box" placeholder="enter your password">
-      <input type="submit" value="login now" class="btn">
-      <input type="checkbox" id="remember">
-      <label for="remember">remember me</label>
-      <p>forget password? <a href="#">click here</a></p>
-      <p>don't have an account? <a href="#">register now</a></p>
-    </form>
-  </div>
-
-  <!-- home section starts -->
-
-  <section class="home" id="home">
-    <div class="content">
-      <h3>adventure is worthwhile</h3>
-      <p>discover new places with us, adventure awaits</p>
-      <a href="#" class="btn">discover more</a>
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card text-center border-0">
+            <div class="card-body">
+              <i class="fas fa-hotel fa-3x mb-3"></i>
+              <h5 class="card-title">Comfortable Stays</h5>
+              <p class="card-text">Affordable hotel bookings in top Indian cities and tourist places.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center border-0">
+            <div class="card-body">
+              <i class="fas fa-plane-departure fa-3x mb-3"></i>
+              <h5 class="card-title">Flight & Train Tickets</h5>
+              <p class="card-text">Hassle-free air and IRCTC train ticket bookings.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center border-0">
+            <div class="card-body">
+              <i class="fas fa-car fa-3x mb-3"></i>
+              <h5 class="card-title">Local Guides</h5>
+              <p class="card-text">Professional tour guides to help you explore India deeply.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="controls">
-      <span class="vid-btn active" data-src="Images/vid-1.mp4"></span>
-      <span class="vid-btn" data-src="Images/vid-2.mp4"></span>
-      <span class="vid-btn" data-src="Images/vid-3.mp4"></span>
-      <span class="vid-btn" data-src="Images/vid-4.mp4"></span>
-      <span class="vid-btn" data-src="Images/vid-5.mp4"></span>
-    </div>
-
-    <div class="video-container">
-      <video src="Images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
-    </div>
-
   </section>
 
-  <!-- home section ends -->
-
-
-  <!-- book section starts -->
-  <section class="book" id="book">
-    <h1 class="heading">
-      <span>b</span>
-      <span>o</span>
-      <span>o</span>
-      <span>k</span>
-      <span class="space"></span>
-      <span>n</span>
-      <span>o</span>
-      <span>w</span>
-    </h1>
-
-    <div class="row">
-      <div class="image">
-        <img src="Images/book-img.svg" alt="">
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col"><img src="https://source.unsplash.com/400x300/?tajmahal" class="img-fluid rounded" alt="Taj Mahal"></div>
+        <div class="col"><img src="https://source.unsplash.com/400x300/?kerala" class="img-fluid rounded" alt="Kerala"></div>
+        <div class="col"><img src="https://source.unsplash.com/400x300/?rajasthan" class="img-fluid rounded" alt="Rajasthan"></div>
       </div>
-      <form action="">
-        <div class="inputBox">
-          <h3>where to</h3>
-          <input type="text" placeholder="place name">
+    </div>
+  </section><!-- Packages Section -->
+  <section id="packages" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Packages</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Agra Package -->
+        <div class="col">
+          <div class="card h-100">
+            <!-- Carousel for Agra -->
+            <div id="carouselAgra" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- First Image -->
+                <div class="carousel-item active">
+                  <a href="https://en.wikipedia.org/wiki/Agra" target="_blank">
+                    <img src="taj.png" class="d-block w-100" alt="Agra">
+                  </a>
+                </div>
+                <!-- Second Image -->
+                <div class="carousel-item">
+                  <a href="https://en.wikipedia.org/wiki/Agra" target="_blank">
+                    <img src="C:\Users\Niraj kumar\Desktop\Travel website\Travel website\India-War-Memorial-arch-New-Delhi-Sir.webp" class="d-block w-100" alt="Agra">
+                  </a>
+                </div>
+                <!-- Third Image -->
+                <div class="carousel-item">
+                  <a href="https://en.wikipedia.org/wiki/Agra" target="_blank">
+                    <img src="agra.jpg" class="d-block w-100" alt="Agra">
+                  </a>
+                </div>
+              </div>
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAgra" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAgra" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Golden Triangle</h5>
+              <p class="card-text">Delhi - Agra - Jaipur: Explore history and architecture.</p>
+              <p><small class="text-muted">Price: ₹12,000</small></p>
+              <a href="#booking" class="btn btn-warning">Book Now</a>
+            </div>
+          </div>
         </div>
-        <div class="inputBox">
-          <h3>how many</h3>
-          <input type="number" placeholder="number of guests">
+  
+        <!-- Goa Package -->
+        <div class="col">
+          <div class="card h-100">
+            <!-- Carousel for Goa -->
+            <div id="carouselGoa" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- First Image -->
+                <div class="carousel-item active">
+                  <a href="https://en.wikipedia.org/wiki/Goa" target="_blank">
+                    <img src="https://source.unsplash.com/400x300/?goa,beach" class="d-block w-100" alt="Goa">
+                  </a>
+                </div>
+                <!-- Second Image -->
+                <div class="carousel-item">
+                  <a href="https://en.wikipedia.org/wiki/Goa" target="_blank">
+                    <img src="https://source.unsplash.com/400x300/?goa,party" class="d-block w-100" alt="Goa">
+                  </a>
+                </div>
+                <!-- Third Image -->
+                <div class="carousel-item">
+                  <a href="https://en.wikipedia.org/wiki/Goa" target="_blank">
+                    <img src="https://source.unsplash.com/400x300/?goa,nightlife" class="d-block w-100" alt="Goa">
+                  </a>
+                </div>
+              </div>
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselGoa" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselGoa" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Goa Beaches</h5>
+              <p class="card-text">Chill on the beaches and enjoy nightlife in Goa.</p>
+              <p><small class="text-muted">Price: ₹9,500</small></p>
+              <a href="#booking" class="btn btn-warning">Book Now</a>
+            </div>
+          </div>
         </div>
-        <div class="inputBox">
-          <h3>arrivals</h3>
-          <input type="date">
+  
+        <!-- Ladakh Package -->
+        <div class="col">
+          <div class="card h-100">
+            <!-- Carousel for Ladakh -->
+            <div id="carouselLadakh" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- First Image -->
+                <div class="carousel-item active">
+                  <a href="https://en.wikipedia.org/wiki/Leh" target="_blank">
+                    <img src="https://source.unsplash.com/400x300/?ladakh,mountains" class="d-block w-100" alt="Ladakh">
+                  </a>
+                </div>
+                <!-- Second Image -->
+                <div class="carousel-item">
+                  <a href="https://en.wikipedia.org/wiki/Leh" target="_blank">
+                    <img src="https://source.unsplash.com/400x300/?ladakh,travel" class="d-block w-100" alt="Ladakh">
+                  </a>
+                </div>
+                <!-- Third Image -->
+                <div class="carousel-item">
+                  <a href="https://en.wikipedia.org/wiki/Leh" target="_blank">
+                    <img src="https://source.unsplash.com/400x300/?ladakh,adventure" class="d-block w-100" alt="Ladakh">
+                  </a>
+                </div>
+              </div>
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselLadakh" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselLadakh" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Leh-Ladakh</h5>
+              <p class="card-text">Experience scenic beauty and adventure in Ladakh.</p>
+              <p><small class="text-muted">Price: ₹18,000</small></p>
+              <a href="#booking" class="btn btn-warning">Book Now</a>
+            </div>
+          </div>
         </div>
-        <div class="inputBox">
-          <h3>leaving</h3>
-          <input type="date">
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Book a Tour</h2>
+      <form>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label for="dest" class="form-label">Destination</label>
+            <input type="text" class="form-control" id="dest" placeholder="Enter destination (e.g. Goa)">
+          </div>
+          <div class="col-md-4">
+            <label for="startDate" class="form-label">Start Date</label>
+            <input type="date" class="form-control" id="startDate">
+          </div>
+          <div class="col-md-4">
+            <label for="endDate" class="form-label">End Date</label>
+            <input type="date" class="form-control" id="endDate">
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary mt-3">Book Now</button>
+          </div>
         </div>
-        <input type="submit" class="btn" value="book now">
       </form>
     </div>
   </section>
 
-
-  <!-- book section ends -->
-
-
-  <!-- packages section starts -->
-
-
-  <section class="packages" id="packages">
-
-    <h1 class="heading">
-      <span>p</span>
-      <span>a</span>
-      <span>c</span>
-      <span>k</span>
-      <span>a</span>
-      <span>g</span>
-      <span>e</span>
-      <span>s</span>
-    </h1>
-
-    <div class="box-container">
-
-      <div class="box">
-        <img src="images/p-1.jpg" alt="">
-        <div class="content">
-          <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="price"> $90.00 <span>$120.00</span> </div>
-          <a href="#" class="btn">book now</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/p-2.jpg" alt="">
-        <div class="content">
-          <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="price"> $90.00 <span>$120.00</span> </div>
-          <a href="#" class="btn">book now</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/p-3.jpg" alt="">
-        <div class="content">
-          <h3> <i class="fas fa-map-marker-alt"></i> sydney </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="price"> $90.00 <span>$120.00</span> </div>
-          <a href="#" class="btn">book now</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/p-4.jpg" alt="">
-        <div class="content">
-          <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="price"> $90.00 <span>$120.00</span> </div>
-          <a href="#" class="btn">book now</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/p-5.jpg" alt="">
-        <div class="content">
-          <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="price"> $90.00 <span>$120.00</span> </div>
-          <a href="#" class="btn">book now</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/p-6.jpg" alt="">
-        <div class="content">
-          <h3> <i class="fas fa-map-marker-alt"></i> eypt </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="price"> $90.00 <span>$120.00</span> </div>
-          <a href="#" class="btn">book now</a>
-        </div>
-      </div>
-
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      &copy; 2025 Travel.lk | Experience India like never before!
     </div>
+  </footer>
 
-  </section>
-
-
-  <!-- packages section ends -->
-
-
-  <!-- services section starts -->
-  <section class="services" id="services">
-
-    <h1 class="heading">
-      <span>s</span>
-      <span>e</span>
-      <span>r</span>
-      <span>v</span>
-      <span>i</span>
-      <span>c</span>
-      <span>e</span>
-      <span>s</span>
-    </h1>
-
-    <div class="box-container">
-
-      <div class="box">
-        <i class="fas fa-hotel"></i>
-        <h3>affordable hotels</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
-          exercitationem ut minima itaque iusto ipsum corrupti!</p>
-      </div>
-      <div class="box">
-        <i class="fas fa-utensils"></i>
-        <h3>food and drinks</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
-          exercitationem ut minima itaque iusto ipsum corrupti!</p>
-      </div>
-      <div class="box">
-        <i class="fas fa-bullhorn"></i>
-        <h3>safty guide</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
-          exercitationem ut minima itaque iusto ipsum corrupti!</p>
-      </div>
-      <div class="box">
-        <i class="fas fa-globe-asia"></i>
-        <h3>around the world</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
-          exercitationem ut minima itaque iusto ipsum corrupti!</p>
-      </div>
-      <div class="box">
-        <i class="fas fa-plane"></i>
-        <h3>fastest travel</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
-          exercitationem ut minima itaque iusto ipsum corrupti!</p>
-      </div>
-      <div class="box">
-        <i class="fas fa-hiking"></i>
-        <h3>adventures</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
-          exercitationem ut minima itaque iusto ipsum corrupti!</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- services section ends -->
-
-  <!-- gallery section starts -->
-
-  <section class="gallery" id="gallery">
-
-    <h1 class="heading">
-      <span>g</span>
-      <span>a</span>
-      <span>l</span>
-      <span>l</span>
-      <span>e</span>
-      <span>r</span>
-      <span>y</span>
-    </h1>
-
-    <div class="box-container">
-
-      <div class="box">
-        <img src="images/g-1.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-2.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-3.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-4.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-5.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-6.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-7.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-8.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/g-9.jpg" alt="">
-        <div class="content">
-          <h3>amazing places</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-          <a href="#" class="btn">see more</a>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- gallery section ends -->
-
-
-  <!-- review section starts  -->
-
-  <section class="review" id="review">
-
-    <h1 class="heading">
-      <span>r</span>
-      <span>e</span>
-      <span>v</span>
-      <span>i</span>
-      <span>e</span>
-      <span>w</span>
-    </h1>
-
-    <div class="swiper-container review-slider">
-
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="box">
-            <img src="images/pic1.png" alt="">
-            <h3>Ayushi Rajput</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit
-              minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae,
-              reprehenderit exercitationem!</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="box">
-            <img src="images/pic2.png" alt="">
-            <h3>Prem Rajput</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit
-              minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae,
-              reprehenderit exercitationem!</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="box">
-            <img src="images/pic3.png" alt="">
-            <h3>Lovly Rajput</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit
-              minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae,
-              reprehenderit exercitationem!</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="box">
-            <img src="images/pic4.png" alt="">
-            <h3>Shivam Rajput</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit
-              minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae,
-              reprehenderit exercitationem!</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- review section ends -->
-
-
-
-
-  <!-- contact section starts -->
-
-  <section class="contact" id="contact">
-
-    <h1 class="heading">
-      <span>c</span>
-      <span>o</span>
-      <span>n</span>
-      <span>t</span>
-      <span>a</span>
-      <span>c</span>
-      <span>t</span>
-    </h1>
-
-    <div class="row">
-
-      <div class="image">
-        <img src="images/contact-img.svg" alt="">
-      </div>
-
-      <form action="">
-        <div class="inputBox">
-          <input type="text" placeholder="name">
-          <input type="email" placeholder="email">
-        </div>
-        <div class="inputBox">
-          <input type="number" placeholder="number">
-          <input type="text" placeholder="subject">
-        </div>
-        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit" class="btn" value="send message">
-      </form>
-
-    </div>
-
-  </section>
-
-  <!-- contact section ends -->
-
-
-
-
-  <!-- footer section starts -->
-
-  <section class="footer">
-
-    <div class="box-container">
-
-      <div class="box">
-        <h3>about us</h3>
-        <p>We provide a wide range of pakages that support every kind of budget.</p>
-      </div>
-
-      <div class="box">
-        <h3>quick links</h3>
-        <a href="#home">home</a>
-        <a href="#book">book</a>
-        <a href="#packages">packages</a>
-        <a href="#services">services</a>
-        <a href="#gallery">gallery</a>
-        <a href="#review">review</a>
-        <a href="#contact">contact</a>
-      </div>
-      <div class="box">
-        <h3>follow us</h3>
-        <a href="https://www.facebook.com/in/" target="_blank">facebook</a>
-        <a href="https://www.insstagram.com/__rajput.7" target="_blank">instagram</a>
-        <a href="https://www.x.com/in" target="_blank">twitter</a>
-        <a href="https://www.linkedin.com/in/shivam-kumar-2946aa254" target="_blank">linkedin</a>
-      </div>
-    </div>
-    <h1 class="credit"> created with ❤️ by <a href="https://github.com/Shivam-9992"
-        target="_blank"><span>Shivam</span></a> | all rights reserved! </h1>
-  </section>
-
-  <!-- footer section ends -->
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- custom js file link -->
-  <script src="script.js"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
